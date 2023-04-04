@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_UI">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asian Pay"
+        android:textSize="70px"
+        android:layout_marginTop="30dp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+
+      app:layout_constraintTop_toBottomOf="@+id/logo"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      android:layout_marginTop="100dp"
+      >
+
+
+      <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:width="800px"
+      android:textSize="60px"
+
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/logo"
+
+
+          >
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"/>
+  </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+  <com.google.android.material.textfield.TextInputLayout
+
+      android:layout_width="800px"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      app:passwordToggleEnabled="true"
+      android:width="800px"
+      android:textSize="80px"
+
+      app:layout_constraintEnd_toEndOf="@+id/email"
+      app:layout_constraintStart_toStartOf="@+id/email"
+      app:layout_constraintTop_toBottomOf="@+id/email">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:inputType="textPassword"
+        android:hint="Enter Password"
+        android:id="@+id/psw"
+        android:layout_width="311dp"
+        android:layout_height="wrap_content" />
+  </com.google.android.material.textfield.TextInputLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password"
+        android:id="@+id/Forget_Btn"
+        android:layout_gravity="right"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@+id/psw"
+        app:layout_constraintRight_toRightOf="@+id/psw"
+        app:layout_constraintTop_toBottomOf="@+id/psw"
+        android:background="?android:attr/selectableItemBackground"/>
+  </LinearLayout>
+
+  <Button
+      android:id="@+id/Login_Btn"
+      android:layout_width="800px"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="20dp"
+      android:width="800px"
+      android:text="Login"
+      android:textSize="60px"
+      app:layout_constraintRight_toRightOf="@+id/Reg_Btn"
+      app:layout_constraintLeft_toLeftOf="@+id/Reg_Btn"
+      app:layout_constraintBottom_toTopOf="@+id/Reg_Btn"
+      />
+
+  <Button
+      android:id="@+id/Reg_Btn"
+      android:layout_width="800px"
+      android:layout_height="wrap_content"
+      android:width="800px"
+      android:text="Register"
+      android:textSize="60px"
+
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      android:layout_marginBottom="40dp"
+
+      />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
