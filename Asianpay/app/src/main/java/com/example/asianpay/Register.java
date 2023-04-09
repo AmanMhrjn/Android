@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 public class Register extends AppCompatActivity {
 
@@ -16,8 +18,13 @@ public class Register extends AppCompatActivity {
         getSupportActionBar().hide();
 
         Button btn_back_login, btn_register;
+        RadioGroup radiogrp;
+        RadioButton radiomale, radiofemale;
         btn_back_login = findViewById(R.id.btn_back_login);
         btn_register = findViewById(R.id.btn_register);
+        radiomale = findViewById(R.id.radiomale);
+        radiofemale = findViewById(R.id.radiofemale);
+
         btn_back_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -32,5 +39,9 @@ public class Register extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        public void onRadioButtonClicked(View view){
+
+        }
     }
 }
