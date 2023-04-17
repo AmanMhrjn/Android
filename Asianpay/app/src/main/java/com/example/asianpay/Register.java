@@ -40,8 +40,8 @@ public class Register extends AppCompatActivity {
             }
         });
 
-        public void onRadioButtonClicked(View view){
-
-        }
+//        public void onRadioButtonClicked(View view){
+//
+//        }
     }
 }
